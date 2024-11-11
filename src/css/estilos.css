@@ -1,0 +1,97 @@
+:root {
+    /* Colores */
+    --color-cabecera:hsl(242, 16%, 43%);
+    --color-pie: hsl(0, 0%, 20%);
+    --color-borde-cuadro: rgb(221, 221, 221);
+    --color-boton-otros: hsl(242, 16%, 43%);
+    --color-boton-otros-oscuro: hsl(242, 16%, 33%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--color-cabecera);
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+main {
+    padding: 2% 5%;
+    flex: 1;
+    /* display: flex; */
+
+    #imagenes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        div {
+            border: 1px solid var(--color-borde-cuadro);
+            border-radius: 2%;
+            background-color: rgb(245, 245, 245);
+            padding: 2% 4%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(104%);
+            }
+
+            img {
+                height: 170px;
+                width: 275px;
+                border-radius: 2%;
+            }
+
+            h2,
+            p {
+                padding-top: 5%;
+                text-align: center;
+            }
+
+            button {
+                margin-top: 7.5%;
+                padding: 5%;
+                background-color: var(--color-boton-otros);
+                border: none;
+                border-radius: 5%;
+                color: white;
+                font-size: 15px;
+
+                &:hover {
+                    background-color: var(--color-boton-otros-oscuro);    
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+footer {
+    background-color: var(--color-pie);
+    padding: 2%;
+    text-align: center;
+    color: white;
+}

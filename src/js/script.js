@@ -20,7 +20,7 @@ let imagen=document.querySelector('div img');
 let nombreCiudad=document.querySelector('div h2');
 let nombrePais=document.querySelector('div p');
 
-btnCambiar.addEventListener('click',()=>cambiarImagenes());
+btnCambiar.addEventListener('click',cambiarImagenes);
 
 function cambiarImagenes(){
     

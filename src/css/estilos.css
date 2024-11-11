@@ -5,6 +5,7 @@
     --color-borde-cuadro: rgb(221, 221, 221);
     --color-boton-otros: hsl(242, 16%, 43%);
     --color-boton-otros-oscuro: hsl(242, 16%, 33%);
+    --color-boton-otros-oscuro2: hsl(242, 16%, 24%);
 }
 
 
@@ -82,6 +83,10 @@ main {
                 &:hover {
                     background-color: var(--color-boton-otros-oscuro);    
                     cursor: pointer;
+                }
+
+                &:active{
+                    background-color: var(--color-boton-otros-oscuro2);    
                 }
             }
         }
